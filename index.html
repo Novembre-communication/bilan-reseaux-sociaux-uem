@@ -66,10 +66,10 @@ body{
   line-height:1.55;
 }
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px 96px}
-h1,h2,h3{font-family:"Poppins",sans-serif;text-wrap:balance;font-weight:600;color:var(--ink);margin:0}
-h1{font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-.01em}
-h2{font-size:26px;margin-bottom:4px}
-h3{font-size:17px;font-weight:600}
+h1,h2,h3{font-family:"Poppins",sans-serif;text-wrap:balance;font-weight:600;margin:0}
+h1{font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-.01em;color:var(--accent-meta)}
+h2{font-size:26px;margin-bottom:4px;color:var(--section-accent, var(--ink))}
+h3{font-size:17px;font-weight:600;color:var(--section-accent, var(--ink))}
 p{margin:0}
 .mono{font-family:"Poppins",sans-serif;font-variant-numeric:tabular-nums}
 a{color:inherit}
@@ -94,11 +94,16 @@ nav.jump a{
   font-size:12.5px;font-weight:600;color:var(--ink-soft);text-decoration:none;padding:7px 12px;
   border-radius:999px;white-space:nowrap;
 }
-nav.jump a:hover{background:var(--surface)}
+nav.jump a:hover{background:var(--accent-meta-soft);color:var(--accent-meta)}
 nav.jump a:focus-visible{outline:2px solid var(--accent-meta);outline-offset:2px}
 
 section{padding:56px 0;border-bottom:1px solid var(--border)}
 section:last-of-type{border-bottom:none}
+#meta{--section-accent:var(--accent-meta)}
+#linkedin{--section-accent:var(--accent-li)}
+#concours{--section-accent:var(--accent-contest)}
+#stories{--section-accent:var(--accent-contest)}
+#suivi{--section-accent:var(--accent-meta)}
 .section-head{margin-bottom:28px;max-width:70ch}
 .section-head p{color:var(--ink-soft);margin-top:8px}
 .tag{
@@ -165,7 +170,7 @@ td.name{white-space:normal;max-width:260px;font-weight:500;color:var(--ink)}
 tr.theme-row{cursor:pointer}
 tr.theme-row:hover{background:var(--surface)}
 tr.theme-row .chev{display:inline-block;width:9px;height:9px;margin-right:8px;border-right:1.6px solid var(--muted);border-bottom:1.6px solid var(--muted);transform:rotate(-45deg);transition:transform .15s ease;vertical-align:1px}
-tr.theme-row.open .chev{transform:rotate(45deg)}
+tr.theme-row.open .chev{transform:rotate(45deg);border-color:var(--accent-meta)}
 tr.theme-detail td{padding:0;border-bottom:1px solid var(--border)}
 tr.theme-detail .inner{padding:4px 14px 14px 34px;display:flex;flex-direction:column;gap:6px}
 tr.theme-detail .content-row{display:flex;justify-content:space-between;gap:16px;font-size:13px;padding:5px 0;border-bottom:1px dashed var(--border)}
@@ -450,7 +455,7 @@ footer li{margin-bottom:6px}
 </section>
 
 <section id="stories">
-  <span class="tag contest" style="background:var(--surface-2);color:var(--ink-soft)">Focus format</span>
+  <span class="tag contest">Focus format</span>
   <div class="section-head">
     <h2>Stories interactives « Vrai ou Faux »</h2>
     <p>Résultats du sticker de sondage sur deux stories Instagram consacrées aux écogestes énergétiques. Instagram efface le nombre de vues et la liste des spectateurs au-delà de 48h : seuls les votes du sondage restent consultables.</p>
@@ -505,7 +510,7 @@ footer li{margin-bottom:6px}
             <tr><td>Juin 2026</td><td class="num">1</td><td class="num">1</td><td class="num">2</td><td class="num">–</td><td class="num"><b>4</b></td></tr>
             <tr><td>Juillet 2026</td><td class="num">5</td><td class="num">–</td><td class="num">7</td><td class="num">1</td><td class="num"><b>14</b></td></tr>
             <tr><td>Août 2026</td><td class="num">5*</td><td class="num">1*</td><td class="num">–</td><td class="num">–</td><td class="num"><b>6*</b></td></tr>
-            <tr style="background:var(--surface)"><td><b>Total réel</b></td><td class="num"><b>13</b></td><td class="num"><b>5</b></td><td class="num"><b>10</b></td><td class="num"><b>7</b></td><td class="num"><b>38*</b></td></tr>
+            <tr style="background:var(--accent-meta-soft)"><td><b>Total réel</b></td><td class="num"><b style="color:var(--accent-meta)">13</b></td><td class="num"><b style="color:var(--accent-meta)">5</b></td><td class="num"><b style="color:var(--accent-meta)">10</b></td><td class="num"><b style="color:var(--accent-meta)">7</b></td><td class="num"><b style="color:var(--accent-meta)">38*</b></td></tr>
             <tr><td><b>Objectif annuel</b></td><td class="num">24</td><td class="num">24</td><td class="num">12</td><td class="num">12</td><td class="num"><b>60</b></td></tr>
           </tbody>
         </table>
@@ -526,7 +531,7 @@ footer li{margin-bottom:6px}
             <tr><td>Juin 2026</td><td class="num">2</td><td class="num">200 €</td></tr>
             <tr><td>Juillet 2026</td><td class="num">5</td><td class="num">750 €</td></tr>
             <tr><td>Août 2026</td><td class="num">3*</td><td class="num">≈ 780 €*</td></tr>
-            <tr style="background:var(--surface)"><td><b>Total réel</b></td><td class="num"><b>15*</b></td><td class="num"><b>≈ 1 730 €*</b></td></tr>
+            <tr style="background:var(--accent-li-soft)"><td><b>Total réel</b></td><td class="num"><b style="color:var(--accent-li)">15*</b></td><td class="num"><b style="color:var(--accent-li)">≈ 1 730 €*</b></td></tr>
             <tr><td><b>Objectif annuel</b></td><td class="num">48</td><td class="num">9 000 €</td></tr>
           </tbody>
         </table>
