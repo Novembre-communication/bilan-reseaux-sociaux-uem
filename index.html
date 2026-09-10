@@ -190,9 +190,10 @@ tr.theme-detail .content-row b{font-family:"Poppins",sans-serif;color:var(--acce
 .contest-stats .cs .l{font-size:11px;color:var(--muted);margin-top:2px}
 .contest-card .src{padding:14px 20px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--border)}
 .contest-card .ads-cross{padding:14px 20px 18px;font-size:12.5px;color:var(--ink-soft)}
-.contest-card .ads-cross .row{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--border)}
-.contest-card .ads-cross .row:last-child{border-bottom:none}
-.contest-card .ads-cross .row b{font-family:"Poppins",sans-serif;color:var(--ink)}
+.ads-tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.ads-tiles .at{background:var(--surface-2);border-radius:8px;padding:10px 12px}
+.ads-tiles .at .v{font-family:"Poppins",sans-serif;font-size:17px;font-weight:700;color:var(--accent-contest);font-variant-numeric:tabular-nums}
+.ads-tiles .at .l{font-size:10.5px;color:var(--muted);margin-top:2px}
 
 
 /* ---- contest post images ---- */
@@ -413,11 +414,13 @@ footer li{margin-bottom:6px}
       </div>
       <div class="src">10 places coupe-file offertes, 5 gagnants tirés au sort.</div>
       <div class="ads-cross">
-        <b style="font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-family:'Poppins',sans-serif">Contenu boosté correspondant (Meta Ads)</b>
-        <div class="row"><span>Carrousel Instagram, juillet</span><b>CTR 2,25 %</b></div>
-        <div class="row"><span>Impressions / Reach</span><b>71 679 / 29 640</b></div>
-        <div class="row"><span>Clics</span><b>1 612</b></div>
-        <div class="row"><span>Réactions / Commentaires</span><b>1 018 / 31</b></div>
+        <b style="font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-family:'Poppins',sans-serif">Contenu boosté correspondant (Meta Ads), carrousel Instagram juillet</b>
+        <div class="ads-tiles">
+          <div class="at"><div class="v">2,25 %</div><div class="l">CTR</div></div>
+          <div class="at"><div class="v">71 679 / 29 640</div><div class="l">Impressions / Reach</div></div>
+          <div class="at"><div class="v">1 612</div><div class="l">Clics</div></div>
+          <div class="at"><div class="v">1 018 / 31</div><div class="l">Réactions / Commentaires</div></div>
+        </div>
       </div>
     </div>
 
@@ -432,11 +435,13 @@ footer li{margin-bottom:6px}
       </div>
       <div class="src">≈ 189 nouveaux abonnés. Vol individuel en montgolfière, en partenariat avec l'Association des Pilotes de Moselle, 4 gagnants tirés au sort.</div>
       <div class="ads-cross">
-        <b style="font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-family:'Poppins',sans-serif">Contenu boosté correspondant (Meta Ads)</b>
-        <div class="row"><span>Post fixe Instagram, août</span><b>CTR 4,03 %</b></div>
-        <div class="row"><span>Impressions / Reach</span><b>112 389 / 41 993</b></div>
-        <div class="row"><span>Clics</span><b>4 528</b></div>
-        <div class="row"><span>Réactions / Commentaires</span><b>1 963 / 373</b></div>
+        <b style="font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-family:'Poppins',sans-serif">Contenu boosté correspondant (Meta Ads), post fixe Instagram août</b>
+        <div class="ads-tiles">
+          <div class="at"><div class="v">4,03 %</div><div class="l">CTR</div></div>
+          <div class="at"><div class="v">112 389 / 41 993</div><div class="l">Impressions / Reach</div></div>
+          <div class="at"><div class="v">4 528</div><div class="l">Clics</div></div>
+          <div class="at"><div class="v">1 963 / 373</div><div class="l">Réactions / Commentaires</div></div>
+        </div>
       </div>
     </div>
   </div>
